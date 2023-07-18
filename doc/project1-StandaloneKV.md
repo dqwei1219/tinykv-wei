@@ -8,7 +8,7 @@ The project can be broken down into 2 steps, including:
 
 1. Implement a standalone storage engine.
 2. Implement raw key/value service handlers.
-
+3. ss
 ### The Code
 
 The `gRPC` server is initialized in `kv/main.go` and it contains a `tinykv.Server` which provides a `gRPC` service named `TinyKv`. It was defined by [protocol-buffer]( https://developers.google.com/protocol-buffers ) in `proto/proto/tinykvpb.proto`, and the detail of rpc requests and responses are defined in `proto/proto/kvrpcpb.proto`.
